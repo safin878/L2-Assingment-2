@@ -18,9 +18,13 @@ Foreign Key: This is a column that refers to the Primary Key of another table, c
 4️⃣ What is the difference between the VARCHAR and CHAR data types?
 
 Aspect VARCHAR CHAR
+
 Length Variable Fixed
+
 Space usage Takes up space as needed Always takes up a fixed amount of space
+
 Performance Generally fast and efficient Slightly slower on large data
+
 VARCHAR is more commonly used because it saves space.
 
 5️⃣ Explain the purpose of the WHERE clause in a SELECT statement.
@@ -29,9 +33,10 @@ The WHERE clause is used to filter data according to specific conditions.
 
 📌 Example:
 
-sql
-Copy
-Edit
+SQL
+
 SELECT * FROM species
+
 WHERE conservation_status = 'Endangered';
+
 Here only those records whose conservation_status is "Endangered" will be displayed.
