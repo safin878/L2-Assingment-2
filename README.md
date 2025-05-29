@@ -1,37 +1,37 @@
 🎓 Bonus Section (উত্তর বাংলায়)
 
-1️⃣ PostgreSQL কী?
+1️⃣ What is PostgreSQL?
 
-PostgreSQL একটি ওপেন-সোর্স রিলেশনাল ডেটাবেস ম্যানেজমেন্ট সিস্টেম (RDBMS), যা ACID কমপ্লায়েন্ট। এটি ডেটা সংরক্ষণ, অনুসন্ধান (query), আপডেট, মুছে ফেলা এবং ডেটার মধ্যে সম্পর্ক তৈরি করার জন্য ব্যবহৃত হয়।
+PostgreSQL is an open-source relational database management system (RDBMS), which is ACID compliant. It is used to store, query, update, delete, and create relationships between data.
 
-2️⃣ PostgreSQL-এ ডেটাবেস স্কিমার উদ্দেশ্য কী?
+2️⃣ What is the purpose of a database schema in PostgreSQL?
 
-স্কিমা হলো একটি লজিক্যাল গ্রুপিং যেখানে টেবিল, ভিউ, ফাংশন ইত্যাদি থাকে। এটি ডেটাকে সংগঠিত রাখতে সাহায্য করে এবং একাধিক ইউজারকে আলাদা পরিবেশে কাজ করার সুযোগ দেয়, অর্থাৎ এটি আইসোলেশন নিশ্চিত করে।
+A schema is a logical grouping that contains tables, views, functions, etc. It helps keep data organized and allows multiple users to work in different environments, i.e. it ensures isolation.
 
-3️⃣ Primary Key ও Foreign Key এর ব্যাখ্যা দিন।
+3️⃣ Explain the Primary Key and Foreign Key concepts in PostgreSQL.
 
-Primary Key: একটি ইউনিক আইডেন্টিফায়ার যা একটি টেবিলের প্রতিটি রেকর্ডকে আলাদা করে চিহ্নিত করে। এটি কখনো null বা ডুপ্লিকেট হতে পারে না।
 
-Foreign Key: এটি এমন একটি কলাম যা অন্য একটি টেবিলের Primary Key-কে রেফার করে, যার মাধ্যমে ডেটার মধ্যে সম্পর্ক (relationship) তৈরি হয়।
+Primary Key: A unique identifier that uniquely identifies each record in a table. It can never be null or duplicated.
 
-4️⃣ VARCHAR আর CHAR-এর মধ্যে পার্থক্য কী?
+Foreign Key: This is a column that refers to the Primary Key of another table, creating a relationship between the data.
 
-Aspect	VARCHAR	CHAR
-Length	ভ্যারিয়েবল (Variable)	নির্দিষ্ট (Fixed)
-Space usage	প্রয়োজন অনুযায়ী জায়গা নেয়	সবসময় নির্দিষ্ট জায়গা নেয়
-Performance	সাধারণত দ্রুত ও কার্যকর	বড় ডেটাতে কিছুটা ধীর
+4️⃣ What is the difference between the VARCHAR and CHAR data types?
 
-VARCHAR বেশি ব্যবহৃত হয় কারণ এটি স্পেস সাশ্রয় করে।
+Aspect VARCHAR CHAR
+Length Variable Fixed
+Space usage Takes up space as needed Always takes up a fixed amount of space
+Performance Generally fast and efficient Slightly slower on large data
+VARCHAR is more commonly used because it saves space.
 
-5️⃣ SELECT স্টেটমেন্টে WHERE ক্লজ-এর উদ্দেশ্য কী?
+5️⃣ Explain the purpose of the WHERE clause in a SELECT statement.
 
-WHERE ক্লজ ব্যবহার করে নির্দিষ্ট শর্ত অনুযায়ী ডেটা ফিল্টার করা হয়।
+The WHERE clause is used to filter data according to specific conditions.
 
-📌 উদাহরণ:
+📌 Example:
 
 sql
 Copy
 Edit
 SELECT * FROM species
 WHERE conservation_status = 'Endangered';
-এখানে শুধুমাত্র সেই রেকর্ডগুলো দেখা যাবে যেগুলোর conservation_status "Endangered"।
+Here only those records whose conservation_status is "Endangered" will be displayed.
