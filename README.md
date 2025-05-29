@@ -1,4 +1,4 @@
-🎓 Bonus Section (উত্তর বাংলায়)
+🎓 Bonus Section  
 
 1️⃣ What is PostgreSQL?
 
